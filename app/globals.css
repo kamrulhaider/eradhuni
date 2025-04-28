@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-red-500 {
+    color: #e53e3e;
+  }
+  .bg-red-500 {
+    background-color: #e53e3e;
+  }
+  .hover\:bg-red-600:hover {
+    background-color: #c53030;
+  }
+  .bg-red-50 {
+    background-color: #fff5f5;
+  }
+  .bg-red-100 {
+    background-color: #fed7d7;
+  }
+  .scroll-mt-16 {
+    scroll-margin-top: 4rem;
+  }
+}
