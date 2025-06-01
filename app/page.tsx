@@ -71,8 +71,9 @@ export default function Home() {
             <a
               href="#subscribe"
               className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition"
+              onClick={() => scrollToSection("subscribe")}
             >
-              Get Started
+              Subscribe
             </a>
           </nav>
           <button
@@ -146,7 +147,7 @@ export default function Home() {
                   className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition text-center text-lg mt-4"
                   onClick={() => scrollToSection("subscribe")}
                 >
-                  Get Started
+                  Subscribe
                 </a>
               </nav>
             </div>
@@ -176,7 +177,7 @@ export default function Home() {
               className="mt-8 bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition"
               onClick={() => scrollToSection("subscribe")}
             >
-              Get Started
+              Subscribe
             </button>
           </div>
           <div className="flex justify-center">
